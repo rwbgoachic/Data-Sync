@@ -5,7 +5,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "test": "jest"
+    "test": "jest",
+    "test:stress": "jest stress-test.ts --verbose",
+    "test:recovery": "jest sync-recovery.test.ts --verbose"
   },
   "dependencies": {
     "lodash.merge": "^4.6.2",
