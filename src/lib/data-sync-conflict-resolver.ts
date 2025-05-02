@@ -1,4 +1,5 @@
-import * as _merge from 'lodash.merge';
+import merge from 'lodash.merge';
+import { Transaction } from './types';
 
 export class ConflictResolver {
   /**
@@ -40,6 +41,6 @@ export class ConflictResolver {
    */
   static manualOverride(finalTx: Transaction, manualData: Partial<Transaction>): Transaction {
     console.warn(`Manual override applied to transaction ${finalTx.id}`);
-    return _merge.default({}, finalTx, manualData, { conflictResolved: true });
+    return merge({}, finalTx, manualData, { conflictResolved: true });
   }
 }
