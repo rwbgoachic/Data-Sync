@@ -11,6 +11,7 @@
     "test:encryption": "jest encryption.test.ts --verbose"
   },
   "dependencies": {
+    "legacy-peer-deps": true,
     "@paysurity/security": "1.2.1",
     "lodash.merge": "^4.6.2",
     "sqlite3": "^5.1.7"
