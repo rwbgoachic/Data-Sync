@@ -13,6 +13,7 @@
   "dependencies": {
     "legacy-peer-deps": true,
     "@paysurity/security": "1.2.1",
+    "dotenv-encrypted": "^1.0.0",
     "lodash.merge": "^4.6.2",
     "sqlite3": "^5.1.7"
   },
